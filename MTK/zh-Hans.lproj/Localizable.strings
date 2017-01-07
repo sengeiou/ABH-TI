@@ -1,0 +1,201 @@
+/* 
+  Localizable.strings
+  MTK
+
+  Created by 有限公司 深圳市 on 16/4/18.
+  Copyright © 2016年 SmaLife. All rights reserved.
+*/
+//首次启动
+"first_exper" = "开始体验";
+//登录
+"login_loginbtn" = "登陆";
+"login_register" = "注册";
+"login_tryout" = "直接试用";
+
+/*计步目标*/
+"myinfo_navtitle"="个人信息";
+"myinfo_account"="账号";
+"myinfo_accountpwd"="密码";
+"myinfo_nickname"="昵称";
+"myinfo_age"="年龄";
+"myinfo_weight"="体重";
+"myinfo_height"="身高";
+"myinfo_sex"="性别";
+"myinfo_step" = "步";
+"myinfo_next" = "下一步";
+/*计步目标*/
+
+
+//注册
+"register_choose_cou" = "国家选择";
+"register_modi_pass" = "修改密码";
+
+//运动
+"sportdetail_navtilte"="运动详细";
+"sportdetail_day" = "天";
+"portdetail_week" = "周";
+"sportdetail_tendat" = "月";
+"sport_navtilte"="运动";
+"sport_plaremark" = "运动目标";
+"sport_stepunit" = "步";
+"sport_distanceunit" = "米";
+"sport_distancekmunit" = "千米";
+"sport_hotunit" = "卡";
+"sport_distance" = "路程";
+"sport_calor" = "卡路里";
+"sport_steps" = "步数";
+"sport_minute" = "分钟";
+"sport_pull" = "下拉刷新";
+"setplan_navtitle"="计步目标";
+"setplan_remark"="设置您的目标运动量";
+"sleep_state_average"="差";
+"sleep_state_comfortable"="好";
+"sleep_state_enough"="优";
+
+//睡眠
+"sleep_navtilte"="睡眠";
+"sleep_today" = "今天";
+"sleep_hour" = "小时";
+"sleep_status" = "睡眠质量";
+"sleep_remark" = "昨晚睡了";
+"sleep_dayunit"="日";
+"sleep_monthunit"="月";
+"sleepdetail_sleeptimelen" = "睡眠时长";
+"sleepdetail_hileleeptimelen" = "深睡时长";
+"sleepdetail_sobertimelen" = "浅睡时长";
+"sleepdetail_sobertime" = "清醒时长";
+"sleep_deep" = "深度睡眠";
+"sleep_light" = "浅睡";
+"sleep_awake" = "清醒";
+
+/*睡眠详细界面*/
+"sleepdetail_navtilte"="睡眠详细";
+"sleepdetail_asleeptime" = "入睡时间";
+"sleepdetail_waketime" = "醒来时间";
+"sleepdetail_sobertime" = "清醒时间";
+"sleepdetail_sleeptimelen" = "睡眠时长";
+"sleepdetail_hileleeptimelen" = "深睡时长";
+"sleepdetail_sobertimelen" = "浅睡时长";
+
+/*心率界面*/
+"hearRate_title" = "心率";
+"hearRate_monitor" = "最近一次监测心率";
+"hearRate_norm" = "人的正常心率为60-100次/分，睡眠时50-70次/分";
+"hearRate_his" = "历史心率";
+"hearRate_date" = "时间";
+"hearRate_bpm" = "心率";
+"hearRate_status" = "状态";
+"hearRate_type1" = "正常";
+"hearRate_type2" = "偏低";
+"hearRate_type3" = "偏高";
+"hearRate_RestHR" = "静息心率";
+"hearRate_MeanHR" = "平均心率";
+"hearRate_MaxHR" = "最大心率";
+"hearRate_HRmonitor" = "心率监测";
+"hearRate_duration" = "时长";
+"hearRate_distance" = "距离";
+"hearRate_pacer" = "配速";
+"hearRate_kcal" = "卡路里";
+"hearRate_actue" = "剧烈运动";
+"hearRate_anaero" = "无氧运动";
+"hearRate_aerobic" = "有氧运动";
+"hearRate_bum" = "燃烧脂肪";
+"hearRate_varm" = "热身运动";
+"hearRate_Quiet_remind" = "请每周固定最少一天，早上醒来后十分钟之内在没有运动、没有喝水和咖啡的情况下监测一次心率，并将心率值录入作为静息心率，此值对您的健康情况参考作用很重要";
+"hearRate_quiet_last" = "最近监测日期";
+"hearReat_quietTitle" = "静息心率";
+"hearReat_notHR" = "静息心率不为空";
+"hearReat_detail" = "心率详情";
+"hearReat_time" = "时间";
+"hearReat_realTime" = "即时心率";
+"hearReat_detail" = "详情";
+"hearReat_High" = "偏快";
+"hearReat_normal" = "正常";
+"hearReat_slow" = "偏慢";
+"hearReat_LastDates1" = "最近7天";
+"hearReat_LastDates2" = "最近14天";
+"hearReat_LastDates3" = "最近21天";
+"hearReat_LastDates4" = "最近30天";
+"hearReat_dele" = "删除";
+"hearReat_interval"="检测间隔";
+"hearReat_set" = "心率设置";
+"hearReat_lnag" = "英文设置";
+"hearReat_light" = "抬手亮设置";
+"hearReat_vertical" = "首页横竖屏设置";
+"hearReat_15min" = "15 分钟";
+"hearReat_30min" = "30 分钟";
+"hearReat_60min" = "60 分钟";
+"hearReat_setNot" = "开始时间必须小于结束时间";
+/*心率界面*/
+
+//提醒
+"remind_navtilte"="提醒";
+
+//*********设置******************************************************************************
+"setting_navtitle"="设置";
+"setting_myinfo"="个人信息";
+"setting_myplan"="个人目标";
+"setting_boundsmawatch"="绑定手表";
+"setting_unbindbound"="解绑";
+"setting_lost" = "防丢提醒";
+"setting_findDevice" = "寻找设备";
+
+//搜索
+"seatch_title"="请保证手表电量充足，并靠近手机";
+"seatch_remind" = "如果搜索不到手表蓝牙，请先在设置-蓝牙-SMA-09-忽略此设备。";
+"seatch_bandtitle"="暂不绑定";
+"search_title" = "搜索附近设备";
+"search_nextit" = "请开启手机蓝牙和设备蓝牙";
+"searct_click" = "点击搜索";
+"search_stopS" = "停止搜索";
+"search_unpar" = "暂不绑定";
+"search_consucc" = "连接成功";
+"search_confail" = "连接失败";
+
+"beginingseatch_title"="正在搜查...";
+"binging_title"="正在连接...";
+"begin_experience"="开始体验";
+
+//个人信息
+"myinfo_account"="账号";
+"myinfo_accountpwd"="密码";
+"myinfo_nickname"="昵称";
+"myinfo_age"="年龄";
+"myinfo_weight"="体重";
+"myinfo_height"="身高";
+"myinfo_sex"="性别";
+"myinfo_step" = "步";
+"myinfo_uniwi1" = "kg";
+"myinfo_unithe1" = "cm";
+"myinfo_Wrange" = "体重介于30到229之间";
+"myinfo_Hrange" = "身高介于50到229之间";
+"myinfo_New" = "更新";
+
+//解绑
+"unpair_success"="解绑成功";
+"unpair_connect"="重新连接";
+//*********设置*******************************************************************************
+
+//弹框
+"alera_back" = "< 返回";
+"aler_can" = "取消";
+"aler_confirm"="确定";
+"alert_nobang" ="未绑定设备,请绑定设备";
+"alert_confirst" = "请先连接手表";
+"alert_relieveband"="您确定解绑,解除绑定后本地数据会丢失";
+"alert_alreadyband"="您已绑定,请解绑后才能重新绑定";
+"alert_seting"="正在设置...";
+"alert_setSuccess"="设置成功";
+"alert_failed" = "设置失败";
+"alert_syncing" = "同步中...";
+"alert_syncsucc" = "同步完成";
+"alert_syncerror" = "同步失败";
+"alert_height"="请输入您的身高";
+"alert_weight"="请输入您的体重";
+"aler_syncing" = "同步中...";
+"aler_syncsucc" = "同步完成";
+"aler_syncerror" = "同步失败";
+"aler_downSync" = "下拉可以刷新";
+"aler_Sync" = "松开马上刷新";
+"aler_lastTime" = "最后更新:";
+"aler_tamane" = "标签过长，请修改";

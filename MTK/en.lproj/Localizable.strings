@@ -1,0 +1,202 @@
+/* 
+  Localizable.strings
+  MTK
+
+  Created by 有限公司 深圳市 on 16/4/18.
+  Copyright © 2016年 SmaLife. All rights reserved.
+*/
+//首次启动
+"first_exper" = "开始体验";
+
+//登录
+"login_loginbtn" = "Login";
+"login_register" = "Register";
+"login_tryout" = "Try directly";
+
+/*计步目标*/
+"myinfo_navtitle"="Personal info.";
+"myinfo_account"="Account";
+"myinfo_accountpwd"="Password";
+"myinfo_nickname"="Nickname";
+"myinfo_age"="Age";
+"myinfo_weight"="Weight";
+"myinfo_height"="Height";
+"myinfo_sex"="Gender";
+"myinfo_step" = "Steps";
+"myinfo_next" = "Next";
+/*计步目标*/
+
+
+//注册
+"register_choose_cou" = "countryChoose";
+"register_modi_pass" = "Modify password";
+
+//运动
+"sportdetail_day" = "Day";
+"portdetail_week" = "Week";
+"sportdetail_tendat" = "month";
+"sport_navtilte"="Sport";
+"sport_plaremark" = "Goal";
+"sport_stepunit" = "Steps";
+"sport_distanceunit" = "m";
+"sport_distancekmunit" = "km";
+"sport_hotunit" = "Cal.";
+"sport_minute" = "Min.";
+"sport_distance" = "Distance";
+"sport_calor" = "Calories";
+"sport_steps" = "Steps";
+"sportdetail_navtilte"="Detail data";
+"setplan_navtitle"="Sport goal";
+"setplan_remark"="Setting sport goal";
+"sport_pull" = "Pull to refresh";
+
+//睡眠
+"sleep_navtilte"="Sleep";
+"sleep_today" = "Today";
+"sleep_hour" = "Hour";
+"sleep_hour1" = "Hour";
+"sport_minute1" = "Min.";
+"sleep_status" = "Sleep quality";
+"sleep_remark" = "Slept last night";
+"sleep_dayunit"="";
+"sleep_monthunit"="";
+"sleepdetail_sleeptimelen" = "Sleep time";
+"sleepdetail_hileleeptimelen" = "Deep sleep time";
+"sleepdetail_sobertimelen" = "Light sleep time";
+"sleep_state_average"="Average";
+"sleep_state_comfortable"="Good";
+"sleep_state_enough"="Excellent";
+"sleepdetail_sobertime" = "Awake time";
+"sleep_deep" = "Deep";
+"sleep_light" = "Light";
+"sleep_awake" = "Awake";
+
+/*睡眠详细界面*/
+"sleepdetail_navtilte"="Sleep patterns";
+"sleepdetail_asleeptime" = "Fell asleep";
+"sleepdetail_waketime" = "Woke-up at";
+"sleepdetail_sobertime" = "Awake for";
+"sleepdetail_sleeptimelen" = "You slept";
+"sleepdetail_hileleeptimelen" = "Deep sleep";
+"sleepdetail_sobertimelen" = "Light sleep";
+
+//心率
+"hearRate_title" = "Heart Rate ";
+"hearRate_monitor" = "Last Time";
+"hearRate_norm" = "The average resting heart rate is 60-100beats/minute.\nThe average sleeping heart rate is 50-70beats/minute.";
+"hearRate_his" = "Detailed data";
+"hearRate_date" = "Date";
+"hearRate_bpm" = "BPM";
+"hearRate_status" = "Status";
+"hearRate_type1" = "Normal";
+"hearRate_type2" = "Low";
+"hearRate_type3" = "High";
+"hearRate_RestHR" = "Resting";
+"hearRate_MeanHR" = "Avg.";
+"hearRate_MaxHR" = "Max";
+"hearRate_HRmonitor" = "Heart Rate ";
+"hearRate_duration" = "Duration";
+"hearRate_distance" = "Distance";
+"hearRate_pacer" = "Pace";
+"hearRate_kcal" = "Calories";
+"hearRate_actue" = "Strenuous exercise";
+"hearRate_anaero" = "Anaerobic exercise";
+"hearRate_aerobic" = "Aerobic exercise";
+"hearRate_bum" = "Fat burning";
+"hearRate_varm" = "Warm up";
+"hearRate_Quiet_remind" = "Please test the static heart rate in fasting status as the static heart rate value, it will be the important reference of your healthy.";
+"hearRate_quiet_last" = "Recent monitor date";
+"hearReat_quietTitle" = "Resting";
+"hearReat_notHR" = "Static heart rate can't be empty";
+"hearReat_detail" = "Hear rate details";
+"hearReat_time" = "Time";
+"hearReat_realTime" = "Real time heart rate";
+"hearReat_detail" = "Details";
+"hearReat_High" = "High";
+"hearReat_normal" = "Normal";
+"hearReat_slow" = "Low";
+"hearReat_LastDates1" = "Last 7 days";
+"hearReat_LastDates2" = "Last 14 days";
+"hearReat_LastDates3" = "Last 21 days";
+"hearReat_LastDates4" = "Last 30 days";
+"hearReat_dele" = "Delete";
+"hearReat_interval"=" Detection Interva";
+"hearReat_set" = "Hear Rate Settings";
+"hearReat_lnag" = "English Settings";
+"hearReat_light" = "Gesture wake-up";
+"hearReat_vertical" = "Vertical screen";
+"hearReat_15min" = "15 minutes";
+"hearReat_30min" = "30 minutes";
+"hearReat_60min" = "60 minutes";
+"hearReat_setNot" = "Start time must smaller than the end time";
+
+//提醒
+"remind_navtilte"="Notice";
+
+//*************************设置**************************************************
+"setting_navtitle"="Settings";
+"setting_myinfo"="Personal info.";
+"setting_myplan"="Personal goal";
+"setting_boundsmawatch"="Pair my watch";
+"setting_unbindbound"="Unpair my watch";
+"setting_lost" = "Anti-lost";
+"setting_findDevice" = "Find device";
+
+"seatch_title"="Please make sure that the watch battery is enough, and close to the phone";
+"seatch_remind" = "If you can't find SMA-09 WATCH bluetooth signal,please go to iphone Setting-bluetooth-forget the device（SMA-09).";
+"seatch_bandtitle"="Connect later";
+"search_title" = "Search for Bluetooth devices";
+"search_nextit" = "(Turn on the Bluetooth mobile phone and Bluetooth device)";
+"searct_click" = "Start Search";
+"search_stopS" = "Stop Search";
+"search_unpar" = "Connect later";
+"search_consucc" = "Connection successful";
+"search_confail" = "Connection fails";
+
+"beginingseatch_title"="Searching...";
+"binging_title"="Connecting...";
+"begin_experience"="Start Now";
+
+//个人信息
+"myinfo_account"="Account";
+"myinfo_accountpwd"="Password";
+"myinfo_nickname"="Nickname";
+"myinfo_age"="Age";
+"myinfo_weight"="Weight";
+"myinfo_height"="Height";
+"myinfo_sex"="Gender";
+"myinfo_step" = "Steps";
+"myinfo_uniwi1" = "kg";
+"myinfo_unithe1" = "cm";
+"myinfo_Wrange" = "Weight is between 30 to 229";
+"myinfo_Hrange" = "Height is between 50 to 229";
+"myinfo_New" = "Update";
+
+//解绑
+"unpair_success"="Disconnect success";
+"unpair_connect"="Connect again";
+//*************************设置**************************************************
+//弹框
+"alera_back" = "< Back";
+"aler_can" = "Cancel";
+"aler_confirm"="Confirm";
+"alert_nobang" ="Disconnect device, please connect device";
+"alert_confirst" = "Connect the watch first";
+"alert_relieveband"="If you confirm disconnect, the local data will lost";
+"alert_alreadyband"="Connected, please connect again after you disconnect";
+"alert_seting"="Setting...";
+"alert_setSuccess"="setting success";
+"alert_failed" = "setting failed";
+"alert_syncing" = "Syncing...";
+"alert_syncsucc" = "Completed!";
+"alert_syncerror" = "Synchronization failed!";
+"alert_height"="Please enter your height";
+"alert_weight"="Please enter your weight";
+"alert_nickname"="Please enter your nickname";
+"aler_syncing" = "Syncing...";
+"aler_syncsucc" = "Completed!";
+"aler_syncerror" = "Synchronization failed!";
+"aler_downSync" = "Drop down to refresh";
+"aler_Sync" = "Release immediately refresh";
+"aler_lastTime" = "latest update:";
+"aler_tamane" = "The label is too long,pls modify";

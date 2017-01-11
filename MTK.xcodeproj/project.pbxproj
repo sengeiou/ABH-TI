@@ -125,6 +125,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0509DD1E25C7CC00004840 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE34B0F81CFC090200CF0208 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		EE34B0F91CFC090200CF0208 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		EE34B0FA1CFC090200CF0208 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -1225,6 +1226,7 @@
 				Base,
 				en,
 				"zh-Hans",
+				es,
 			);
 			mainGroup = EEC995ED1CC46ADA00BD5A45;
 			productRefGroup = EEC995F71CC46ADA00BD5A45 /* Products */;
@@ -1425,6 +1427,7 @@
 				EEC9965E1CC4ABEA00BD5A45 /* Base */,
 				EEC996601CC4AC3400BD5A45 /* en */,
 				EEC996611CC4AC4000BD5A45 /* zh-Hans */,
+				EE0509DD1E25C7CC00004840 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1540,10 +1543,10 @@
 					"$(PROJECT_DIR)/Framework/ShareSMS/MTKBleSdk",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.MTK;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smawatch.mt-smart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "391cd069-caa8-47fe-93f1-4dda64f55016";
-				PROVISIONING_PROFILE_SPECIFIER = liang_mtk_develop;
+				PROVISIONING_PROFILE = "c5b3cee7-87cf-424c-abe7-0a6f1e8bb6fa";
+				PROVISIONING_PROFILE_SPECIFIER = liang_deve_mtsmart_text;
 			};
 			name = Debug;
 		};
@@ -1555,7 +1558,7 @@
 				CODE_SIGN_ENTITLEMENTS = MTK/MTK.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Smart Care Technology Co., Ltd (UXHZJEX24R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = UXHZJEX24R;
+				DEVELOPMENT_TEAM = VHVLE5FL92;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1573,10 +1576,10 @@
 					"$(PROJECT_DIR)/Framework/ShareSMS/MTKBleSdk",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.MTK;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smawatch.mt-smart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "90ebd788-3e17-408b-a221-6b664a0e68ec";
-				PROVISIONING_PROFILE_SPECIFIER = liang_sub_dis_wear;
+				PROVISIONING_PROFILE = "040ed814-2667-41a5-bf74-ca353cba5885";
+				PROVISIONING_PROFILE_SPECIFIER = liang_dis_mtsmart_text;
 			};
 			name = Release;
 		};

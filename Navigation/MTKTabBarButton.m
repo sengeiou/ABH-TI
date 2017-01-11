@@ -24,8 +24,12 @@
         // 文字居中
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         // 字体大小
-        self.titleLabel.font = [UIFont systemFontOfSize:11];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *allLanguages = [defaults objectForKey:@"AppleLanguages"];
+        NSString *preferredLan = [[allLanguages objectAtIndex:0] substringToIndex:2];
+        self.titleLabel.font = [UIFont systemFontOfSize:[preferredLan isEqualToString:@"es"] ? 8:11];
         // 文字颜色
+        self.titleLabel.numberOfLines = 0;
         
         [self setTitleColor:MTKTabBarButtonTitleColor forState:UIControlStateNormal];
         [self setTitleColor:MTKTabBarButtonTitleSelectedColor  forState:UIControlStateSelected];
@@ -86,8 +90,7 @@
  *  @param object  哪个对象的属性被改变
  *  @param change  属性发生的改变
  */
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     // 设置文字
     [self setTitle:self.item.title forState:UIControlStateSelected];
     [self setTitle:self.item.title forState:UIControlStateNormal];

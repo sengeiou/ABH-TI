@@ -65,8 +65,23 @@
     userInfo = [MTKArchiveTool getUserInfo];
 }
 
+//- (void)viewWillLayoutSubviews{
+//    NSLog(@"gw3geheqh==%f   %f",_qualityW.constant,_situationW.constant);
+////    _stateViewW.constant = _qualityW.constant + _situationW.constant + 8;
+//}
+//
+//- (void)viewDidLayoutSubviews{
+//    NSLog(@"gw3geheqh44==%f   %f",_qualityW.constant,_situationW.constant);
+////    _stateViewW.constant = _qualityW.constant + _situationW.constant + 8;
+//}
+//
+//- (void)viewDidAppear:(BOOL)animated{
+//     NSLog(@"gw3geheqh44555==%f   %f",_qualityW.constant,_situationW.constant);
+//}
+
 #pragma matk *****创建UI
 - (void)createUI{
+
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:32/255.0 green:40/255.0 blue:102/255.0 alpha:1] size:MainScreen.size] forBarMetrics:UIBarMetricsDefault];
     if (MainScreen.size.height > 568) {
         _progressH.constant = 270.f;
@@ -86,7 +101,7 @@
         _minUnLab.font = [UIFont systemFontOfSize:17];
         _lastSlLab.font = [UIFont systemFontOfSize:19];
     }
-
+    
     self.dateLab.text=[self dateWithYMD];
     self.hourUnLab.text = MtkLocalizedString(@"sleep_hour");
     self.minUnLab.text = MtkLocalizedString(@"sport_minute");
@@ -95,6 +110,9 @@
     self.deepLab.text = MtkLocalizedString(@"sleep_deep");
     self.lightLab.text = MtkLocalizedString(@"sleep_light");
     self.soberLab.text = MtkLocalizedString(@"sleep_awake");
+    CGSize qualitySize = [_qualityLab.text sizeWithAttributes:@{NSFontAttributeName:_qualityLab.font}];
+    CGSize situationSize = [_situationLab.text sizeWithAttributes:@{NSFontAttributeName:_situationLab.font}];
+    _stateViewW.constant = qualitySize.width + situationSize.width + 8;
     [self refreshData];
 }
 
@@ -295,6 +313,9 @@ static int  deffInt=30;
     else{
          _qualityLab.text = MtkLocalizedString(@"sleep_state_average");
     }
+    CGSize qualitySize = [_qualityLab.text sizeWithAttributes:@{NSFontAttributeName:_qualityLab.font}];
+    CGSize situationSize = [_situationLab.text sizeWithAttributes:@{NSFontAttributeName:_situationLab.font}];
+    _stateViewW.constant = qualitySize.width + situationSize.width + 8;
 }
 
 - (int)returnHour:(int)second{

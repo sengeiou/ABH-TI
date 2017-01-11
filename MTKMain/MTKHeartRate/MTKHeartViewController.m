@@ -78,7 +78,13 @@
     _quietLab.text = MtkLocalizedString(@"hearRate_RestHR");
     _avgLab.text = MtkLocalizedString(@"hearRate_MeanHR");
     _maxLab.text = MtkLocalizedString(@"hearRate_MaxHR");
+    
+    CGSize qualitySize = [_stateLab.text sizeWithAttributes:@{NSFontAttributeName:_stateLab.font}];
+    CGSize situationSize = [_situationLab.text sizeWithAttributes:@{NSFontAttributeName:_situationLab.font}];
+    _stateViewW.constant = qualitySize.width + situationSize.width + 8;
+    
     [_detailBut setTitle:MtkLocalizedString(@"hearReat_detail") forState:UIControlStateNormal];
+    _detailBut.titleLabel.numberOfLines = 2;
     CAGradientLayer * _gradientLayer = [CAGradientLayer layer];  // 设置渐变效果
     _gradientLayer.bounds = CGRectMake(_gradientLayer.bounds.origin.x, _gradientLayer.bounds.origin.y, _gradientLayer.bounds.size.width, _progressH.constant);
     _gradientLayer.borderWidth = 0;
@@ -92,6 +98,7 @@
     _HRView.backgroundColor = [UIColor colorWithRed:241/255.0 green:19/255.0 blue:71/255.0 alpha:1];
 //    [_HRView.layer insertSublayer:_gradientLayer atIndex:0];
        self.dateLab.text=[self dateWithYMD];
+    
     [self refreshData];
 }
 
@@ -229,6 +236,10 @@ static int  deffInt=30;
     else {
         _heartLead.constant = 0;
     }
+    
+    CGSize qualitySize = [_stateLab.text sizeWithAttributes:@{NSFontAttributeName:_stateLab.font}];
+    CGSize situationSize = [_situationLab.text sizeWithAttributes:@{NSFontAttributeName:_situationLab.font}];
+    _stateViewW.constant = qualitySize.width + situationSize.width + 8;
 }
 
 - (IBAction)detailsBut:(id)sender{

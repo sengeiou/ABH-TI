@@ -15,5 +15,5 @@
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *backH;
 @property (nonatomic,strong) NSDate *data;
 @property(nonatomic,strong) MTKSqliteData *sqliData;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint *progressH, *progressW;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint *progressH, *progressW, *qualityW, *situationW, *stateViewW;
 @end

@@ -315,7 +315,11 @@ static int  deffInt=30;
     }
     CGSize qualitySize = [_qualityLab.text sizeWithAttributes:@{NSFontAttributeName:_qualityLab.font}];
     CGSize situationSize = [_situationLab.text sizeWithAttributes:@{NSFontAttributeName:_situationLab.font}];
-    _stateViewW.constant = qualitySize.width + situationSize.width + 8;
+    CGFloat constant = qualitySize.width + situationSize.width + 8;
+    if (constant < 200) {
+        constant = 200;
+    }
+    _stateViewW.constant = constant;
 }
 
 - (int)returnHour:(int)second{

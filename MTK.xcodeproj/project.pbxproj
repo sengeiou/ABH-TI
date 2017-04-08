@@ -177,6 +177,7 @@
 		EE55F83B1CCB7DA300B99223 /* MTKArchiveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKArchiveTool.m; sourceTree = "<group>"; };
 		EE55F83D1CCB7E2F00B99223 /* MTKUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTKUserInfo.h; path = Method/MTKUserInfo.h; sourceTree = SOURCE_ROOT; };
 		EE55F83E1CCB7E2F00B99223 /* MTKUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTKUserInfo.m; path = Method/MTKUserInfo.m; sourceTree = SOURCE_ROOT; };
+		EE6976441E94DEE10003F58F /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE7B4A121CCF4AC5007C4644 /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAProgressLabel.h; sourceTree = "<group>"; };
 		EE7B4A131CCF4AC5007C4644 /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAProgressLabel.m; sourceTree = "<group>"; };
 		EE7B4A141CCF4AC5007C4644 /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPropertyAnimation.h; sourceTree = "<group>"; };
@@ -1223,6 +1224,7 @@
 				en,
 				"zh-Hans",
 				es,
+				cs,
 			);
 			mainGroup = EEC995ED1CC46ADA00BD5A45;
 			productRefGroup = EEC995F71CC46ADA00BD5A45 /* Products */;
@@ -1424,6 +1426,7 @@
 				EEC996601CC4AC3400BD5A45 /* en */,
 				EEC996611CC4AC4000BD5A45 /* zh-Hans */,
 				EE0509DD1E25C7CC00004840 /* es */,
+				EE6976441E94DEE10003F58F /* cs */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1538,9 +1541,9 @@
 					"$(PROJECT_DIR)/Framework/ShareSMS/MTKBleSdk",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.mtsma;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.smarttime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e7ef197a-dd9f-4072-b7e9-a8a17caeebe7";
+				PROVISIONING_PROFILE = "59433a92-8d52-438f-8188-9853d2426713";
 				PROVISIONING_PROFILE_SPECIFIER = All_development_text;
 			};
 			name = Debug;
@@ -1552,7 +1555,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Smart Care Technology Co., Ltd (UXHZJEX24R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = V96N6WUHA2;
+				DEVELOPMENT_TEAM = VHVLE5FL92;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1570,10 +1573,10 @@
 					"$(PROJECT_DIR)/Framework/ShareSMS/MTKBleSdk",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.mtsma;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smawatch.smarttime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "17ecea37-385a-4f80-9f65-ef0347e072f3";
-				PROVISIONING_PROFILE_SPECIFIER = jinyun_dis_mtsma_sub;
+				PROVISIONING_PROFILE = "0c704187-a3a2-4c36-afa3-43cbed9986e7";
+				PROVISIONING_PROFILE_SPECIFIER = liang_dis_smarttime_text;
 			};
 			name = Release;
 		};

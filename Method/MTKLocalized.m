@@ -14,7 +14,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *allLanguages = [defaults objectForKey:@"AppleLanguages"];
     NSString *preferredLan = [[allLanguages objectAtIndex:0] substringToIndex:2];
-    if (![preferredLan isEqualToString:@"zh"] && ![preferredLan isEqualToString:@"es"]) {
+    if (![preferredLan isEqualToString:@"zh"] && ![preferredLan isEqualToString:@"es"] && ![preferredLan isEqualToString:@"cs"]) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"];
         NSBundle *languageBundle = [NSBundle bundleWithPath:path];
         s = [languageBundle localizedStringForKey:translation_key value:@"" table:nil];

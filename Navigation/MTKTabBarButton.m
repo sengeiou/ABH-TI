@@ -27,7 +27,10 @@
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSArray *allLanguages = [defaults objectForKey:@"AppleLanguages"];
         NSString *preferredLan = [[allLanguages objectAtIndex:0] substringToIndex:2];
-        self.titleLabel.font = [UIFont systemFontOfSize:[preferredLan isEqualToString:@"es"] ? 8:11];
+         self.titleLabel.font = [UIFont systemFontOfSize:11];
+        if ([preferredLan isEqualToString:@"es"] || [preferredLan isEqualToString:@"cs"]) {
+            self.titleLabel.font = [UIFont systemFontOfSize:8];
+        }
         // 文字颜色
         self.titleLabel.numberOfLines = 0;
         

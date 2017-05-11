@@ -125,7 +125,7 @@
 - (NSString *)dateWithYMD
 {
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-    fmt.dateFormat = @"M月d日";
+    fmt.dateFormat = @"MM-dd";
     NSString *selfStr;
     NSString *today = [fmt stringFromDate:[NSDate date]];
     if ([today isEqualToString:[fmt stringFromDate:self.data]]) {
@@ -135,7 +135,7 @@
     else {
         selfStr= [fmt stringFromDate:self.data];
     }
-    return [self FormatStr:selfStr];
+    return selfStr;
 }
 
 -(NSString *)FormatStr:(NSString *)str

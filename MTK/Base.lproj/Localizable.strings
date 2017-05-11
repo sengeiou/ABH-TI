@@ -39,7 +39,7 @@
 "sport_plaremark" = "Goal";
 "sport_stepunit" = "Step";
 "sport_distanceunit" = "m";
-"sport_hotunit" = "Cal.";
+"sport_hotunit" = "Kcal";
 "setplan_navtitle"="Sport goal";
 "setplan_remark"="Setting sport goal";
 "sportdetail_navtilte"="Detail data";

@@ -40,7 +40,7 @@
 "sport_stepunit" = "Steps";
 "sport_distanceunit" = "m";
 "sport_distancekmunit" = "km";
-"sport_hotunit" = "Cal.";
+"sport_hotunit" = "Kcal";
 "sport_minute" = "Min.";
 "sport_distance" = "Distance";
 "sport_calor" = "Calories";

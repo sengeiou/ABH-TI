@@ -12,8 +12,11 @@
 @interface MTKSettingViewController ()<UITableViewDelegate,UITableViewDataSource,CachedBLEDeviceDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     NSArray *settingArr;
+    BOOL searchDevice;
+    NSTimer *searchTimer;
 }
 @property (weak, nonatomic) CachedBLEDevice *mDevice;
+@property (strong, nonatomic) AVPlayer *avPlayer;
 @end
 
 @implementation MTKSettingViewController
@@ -33,6 +36,22 @@
     [self initializeMethod];
     [self createUI];
      [self.setTab reloadData];
+    
+//    NSURL *url=[[NSBundle mainBundle]URLForResource:@"Alarm.mp3" withExtension:Nil];
+//    
+//    //2.实例化播放器
+//   AVAudioPlayer *_player=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:Nil];
+//
+//    //3.缓冲
+//    [_player prepareToPlay];
+//     [_player play];
+//     _avPlayer = [[AVPlayer alloc] initWithURL:url];
+//    [_avPlayer addPeriodicTimeObserverForInterval:CMTimeMake(1, 30) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+//        float seconds = CMTimeGetSeconds(time);
+//        NSLog(@"wofgijgiorij  %f",seconds);
+//    }];
+//    [_avPlayer play];
+//    [_player ]
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -56,6 +75,15 @@
 - (void)createUI{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask, YES);
     NSString *uniquePath=[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",[MTKArchiveTool getUserInfo].userID]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *allLanguages = [defaults objectForKey:@"AppleLanguages"];
+    NSString *preferredLan = [[allLanguages objectAtIndex:0] substringToIndex:2];
+    if (![preferredLan isEqualToString:@"zh"]){
+        [self.imageBut setBackgroundImage:[UIImage imageNamed:@"default_head_img_en"] forState:UIControlStateNormal];
+    }
+    else{
+        [self.imageBut setBackgroundImage:[UIImage imageNamed:@"default_head_img"] forState:UIControlStateNormal];
+    }
     NSData *data = [NSData dataWithContentsOfFile:uniquePath];
     UIImage *img = [[UIImage alloc] initWithData:data];
     if(img)
@@ -145,7 +173,14 @@
         }
     else if (indexPath.row == 4){
         if ([MTKBleMgr checkBleStatus]) {
-            
+            NSString *str = SEARCHDEVICE(!searchDevice);
+            searchDevice = !searchDevice;
+            [[MyController getMyControllerInstance] sendDataWithCmd:str mode:SEARCHDEVICE];
+            if (searchTimer) {
+                [searchTimer invalidate];
+                searchTimer = nil;
+            }
+            searchTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(searchDeviceTimeOut) userInfo:nil repeats:NO];
             if (mDevice.mFindingState == FINDING_STATE_ON || mDevice.mAlertState == ALERT_STATE_ON)
             {
                 if (mDevice.mFindingState == FINDING_STATE_ON)
@@ -181,13 +216,26 @@
                 }
             }
         }
+        else{
+            searchDevice = NO;
+        }
     }
+}
+
+- (void)searchDeviceTimeOut{
+    if (searchTimer) {
+        [searchTimer invalidate];
+        searchTimer = nil;
+    }
+    NSString *str = SEARCHDEVICE(!searchDevice);
+    searchDevice = !searchDevice;
+    [[MyController getMyControllerInstance] sendDataWithCmd:str mode:SEARCHDEVICE];
 }
 
 - (void)lostSet:(UISwitch *)sender{
    
     if ([MTKBleMgr checkBleStatus]) {
-//         [mDevice updateDeviceConfiguration:CONFIG_ALERT_SWITCH_STATE_CHANGE changedValue:YES];
+//       [mDevice updateDeviceConfiguration:CONFIG_ALERT_SWITCH_STATE_CHANGE changedValue:YES];
          [mDevice updateDeviceConfiguration:CONFIG_DISCONNECT_ALERT_SWITCH_STATE_CHANGE changedValue:sender.isOn];
     }
    sender.on = mDevice.mDisconnectEnabled;

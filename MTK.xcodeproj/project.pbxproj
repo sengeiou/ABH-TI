@@ -100,6 +100,7 @@
 		EEC996641CC4CCF400BD5A45 /* MTKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC996631CC4CCF400BD5A45 /* MTKLoginViewController.m */; };
 		EED63B851CF3FECF00B8DB10 /* Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EED63B841CF3FECF00B8DB10 /* Alarm.mp3 */; };
 		EEEBECBE1EC05BAF00F1443F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEBECBD1EC05BAF00F1443F /* HealthKit.framework */; };
+		EEEF75FC1F25F28A001C6BA0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEF75FB1F25F28A001C6BA0 /* MediaPlayer.framework */; };
 		EEF6F5D51CD0FC170061A47B /* SmaQuietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6F5D31CD0FC170061A47B /* SmaQuietViewController.m */; };
 		EEF6F5D61CD0FC170061A47B /* SmaQuietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF6F5D41CD0FC170061A47B /* SmaQuietViewController.xib */; };
 		EEF6F5DB1CD0FC480061A47B /* SmaQuietTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6F5D91CD0FC480061A47B /* SmaQuietTableCell.m */; };
@@ -377,6 +378,7 @@
 		EEC996631CC4CCF400BD5A45 /* MTKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTKLoginViewController.m; path = Login/MTKLoginViewController.m; sourceTree = SOURCE_ROOT; };
 		EED63B841CF3FECF00B8DB10 /* Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alarm.mp3; sourceTree = "<group>"; };
 		EEEBECBD1EC05BAF00F1443F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EEEF75FB1F25F28A001C6BA0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		EEF6F5D21CD0FC170061A47B /* SmaQuietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmaQuietViewController.h; sourceTree = "<group>"; };
 		EEF6F5D31CD0FC170061A47B /* SmaQuietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmaQuietViewController.m; sourceTree = "<group>"; };
 		EEF6F5D41CD0FC170061A47B /* SmaQuietViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmaQuietViewController.xib; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEF75FC1F25F28A001C6BA0 /* MediaPlayer.framework in Frameworks */,
 				EE7B4A2E1CCF6B6D007C4644 /* libsqlite3.0.tbd in Frameworks */,
 				EE8768291CCC920200B53E45 /* CoreData.framework in Frameworks */,
 				EE55F82F1CCB460900B99223 /* libMTKBleManager.a in Frameworks */,
@@ -951,6 +954,7 @@
 		EEC8FB011DCAE9E40054D2B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEEF75FB1F25F28A001C6BA0 /* MediaPlayer.framework */,
 				EEEBECBD1EC05BAF00F1443F /* HealthKit.framework */,
 			);
 			name = Frameworks;

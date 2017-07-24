@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,8 +26,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-Sv-SnG">
-                    <rect key="frame" x="13" y="112" width="295" height="149"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-Sv-SnG">
+                    <rect key="frame" x="40" y="112" width="295" height="149"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7VT-CI-vF3">
                             <rect key="frame" x="0.0" y="0.0" width="295" height="149"/>
@@ -166,8 +166,8 @@
                         <constraint firstItem="BVo-ea-tTB" firstAttribute="leading" secondItem="TS1-Lm-lnF" secondAttribute="trailing" constant="8" id="yyZ-jJ-2iL"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrP-Cx-YMK">
-                    <rect key="frame" x="123" y="18" width="74" height="74"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrP-Cx-YMK">
+                    <rect key="frame" x="150.5" y="18" width="74" height="74"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="74" id="Q8O-Y0-V5Y"/>
                         <constraint firstAttribute="height" constant="74" id="fr5-E7-4G2"/>
@@ -177,8 +177,8 @@
                         <action selector="headSelector:" destination="-1" eventType="touchUpInside" id="eXR-U8-4C8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1of-aS-ysf">
-                    <rect key="frame" x="29" y="286" width="263" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1of-aS-ysf">
+                    <rect key="frame" x="56" y="286" width="263" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="gFx-b2-k45"/>
                         <constraint firstAttribute="width" constant="263" id="gGR-Fh-Po1"/>

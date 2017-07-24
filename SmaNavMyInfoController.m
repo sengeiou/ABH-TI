@@ -93,6 +93,16 @@
     self.imageBut.layer.masksToBounds = YES;
     self.imageBut.layer.cornerRadius = self.imageBut.frame.size.width/2;
     self.imageBut.layer.borderColor = [UIColor clearColor].CGColor;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *allLanguages = [defaults objectForKey:@"AppleLanguages"];
+    NSString *preferredLan = [[allLanguages objectAtIndex:0] substringToIndex:2];
+    if (![preferredLan isEqualToString:@"zh"]){
+        [self.imageBut setBackgroundImage:[UIImage imageNamed:@"default_head_img_en"] forState:UIControlStateNormal];
+    }
+    else{
+        [self.imageBut setBackgroundImage:[UIImage imageNamed:@"default_head_img"] forState:UIControlStateNormal];
+    }
     //    [self.nexbtn setImage:[UIImage imageLocalWithName:@"next_btn_bg"] forState:UIControlStateNormal];
     //    [self.nexbtn setImage:[UIImage imageLocalWithName:@"next_btn_bg_sel"] forState:UIControlStateHighlighted];
     //

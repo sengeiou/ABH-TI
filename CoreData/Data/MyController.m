@@ -39,7 +39,37 @@ static  MyController *instance;
         [self setReceiversTags:tagArr];
         
         [[ControllerManager getControllerManagerInstance] addController: self];
+        
+        //1.音频文件的url路径
+        NSURL *url=[[NSBundle mainBundle]URLForResource:@"Alarm.mp3" withExtension:Nil];
+        
+        //2.实例化播放器
+        _player=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:Nil];
+        
+        //3.缓冲
+        [_player prepareToPlay];
+        
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker error:nil];
+        [[AVAudioSession sharedInstance] overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
+        
+        [self getSystemVolumSlider];
     } return self;
+}
+
+- (UISlider*)getSystemVolumSlider{
+    static UISlider * volumeViewSlider = nil;
+    if (volumeViewSlider == nil) {
+        MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(10, 50, 200, 4)];
+        
+        for (UIView* newView in volumeView.subviews) {
+            if ([newView.class.description isEqualToString:@"MPVolumeSlider"]){
+                volumeViewSlider = (UISlider*)newView;
+                break;
+            }
+        }
+    }
+    
+    return volumeViewSlider;
 }
 
 - (void)sendDataWithCmd:(NSString *)cmd mode:(MTKBLEMEDO)mode{
@@ -281,6 +311,15 @@ static  MyController *instance;
              [delegate onDataReceive:dataStr mode:GETUSERINFO];
          }
 
+     }
+     else if ([dataArr[1] isEqualToString:@"40"] && [mode isEqualToString:@"SET"]){
+         if ([dataArr[2] isEqualToString:@"1"]) {
+              [self getSystemVolumSlider].value = 1.0f;
+             [_player play];
+         }
+         else{
+             [_player stop];
+         }
      }
 }
 

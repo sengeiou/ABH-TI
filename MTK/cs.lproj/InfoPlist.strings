@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MTK
+
+  Created by 有限公司 深圳市 on 2017/8/17.
+  Copyright © 2017年 SmaLife. All rights reserved.
+*/
+"NSPhotoLibraryUsageDescription" = "Povolit této aplikaci přístup k Vašim fotkám";
+"NSBluetoothPeripheralUsageDescription" = "aplikace přístup k Bluetooth?";

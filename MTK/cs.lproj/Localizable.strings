@@ -9,7 +9,7 @@
 "myinfo_weight"="Hmotnost";
 "myinfo_height"="Výška";
 "myinfo_sex"="Pohlaví";
-"myinfo_step"="Kroky";
+"myinfo_step"="Kroků";
 "myinfo_next"="Další";
 "register_choose_cou"="Výběr státu";
 "register_modi_pass"="Změnit heslo";
@@ -26,14 +26,14 @@
 "sport_distance"="Vzdálenost";
 "sport_calor"="Kalorie";
 "sport_steps"="Kroků";
-"sportdetail_navtilte"="Podrobnosti o sportovní aktivite";
+"sportdetail_navtilte"="Podrobnosti o sportovní aktivitě";
 "setplan_navtitle"="Sportovní cíle";
 "setplan_remark"="Nastavení sportovních cílů";
 "sport_pull"="Potáhněte pro \naktualizaci";
 "sleep_navtilte"="Spánek";
 "sleep_today"="Dnes";
-"sleep_hour"="Hodina";
-"sleep_hour1"="Hodina";
+"sleep_hour"="Hodin";
+"sleep_hour1"="Hodin";
 "sport_minute1"="Min.";
 "sleep_status"="Kvalita spánku";
 "sleep_remark"="Spánek minulou noc";
@@ -63,8 +63,8 @@
 "hearRate_status"="Stav";
 "hearRate_type1"="Normální";
 "hearRate_type2"="Nízká";
-"hearRate_type3"="Vysoká";
-"hearRate_RestHR"="V klidů";
+"hearRate_type3"="V klidu";
+"hearRate_RestHR"="V klidu";
 "hearRate_MeanHR"="Průměr";
 "hearRate_MaxHR"="Max";
 "hearRate_HRmonitor"="Tepová frekvence";
@@ -79,7 +79,7 @@
 "hearRate_varm"="Zahřát se";
 "hearRate_Quiet_remind"="Prosím, vyzkoušejte statickou tepovou frekvenci na lačno, bude to důležitý ukazatel Vaše zdravotního stavu.";
 "hearRate_quiet_last"="Datum posledního monitoringu";
-"hearReat_quietTitle"="V klidů";
+"hearReat_quietTitle"="V klidu";
 "hearReat_notHR"="Statická tepová frekvence nemůže být nevyplněna";
 "hearReat_detail"="Podrobnosti o tepové frekvence";
 "hearReat_time"="Čas";
@@ -160,4 +160,4 @@
 "aler_downSync"="Stáhněte dolů pro aktualizaci";
 "aler_Sync"="Uvolněte pro okamžitou aktualizaci";
 "aler_lastTime"="poslední aktualizace:";
-"aler_tamane"="Nápis je příliš dlouhý, prosím upravte";
+"aler_tamane"="Nápis je příliš dlouhý, prosím Změnit";
